@@ -1,0 +1,14 @@
+Dia 2
+Curso Linkedin de data cleaning
+Codigo feito no Visual Studio code
+Basico sobre eliminação de nulos, duplicatas e valores errados
+Para eliminação de erros relacionados á entrada de dados por pessoas 
+a melhor solução é criar uma ui que restringe e apresenta claramente
+os dados que devem ser fornecidos
+
+Verificar integridade dos dados:
+É possivel abrir arquivos no terminal e por exemplo usar o comando 
+' sha256sum "nome arquivo" > chave.txt ' para criar um arquivo com
+a chave do arquivo da maneira que ele está, se o arquivo for
+alterado a chave será alterada, e pode-se conferir isso com o comando
+' sha256sum -c chave.txt '

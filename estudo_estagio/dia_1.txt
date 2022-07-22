@@ -1,0 +1,44 @@
+Vendo cheatsheet python basico para data science:
+ -introdução a operações com números
+-Introdução a manipulação de strings. 
+Funções importantes: 
+string.replace('x','y') - substitue um elemento por outro
+string.strip() - remove espaços em branco
+
+-Introdução a numpy:
+declarar array:
+my_list = [1, 2, 3, 4]
+my_array = np.array(my_list)
+
+declarar array com 2 dimensões:
+my_2darray = np.array([[1,2,3],[4,5,6]])
+
+Seleionar dados do array:
+my_2darray[:,0] #my_2darray[rows, columns]
+
+Pode fazer operações com numeros de arrays:
+In- my_array > 3
+Out-  array([ , , , ], dtype=bool)
+
+In- my_array * 2
+Out- array([2, 4, 6, 8])
+
+In- my_array + np.array([5, 6, 7, 8])
+Out- array([6, 8, 10, 12])
+
+my_array.shape - Pega as dimensões
+np.append(other_array) - Coloca itens no array
+np.insert(my_array, 1, 5) - Insere itens em um array
+np.delete(my_array,[1]) - Deleta itens do array
+np.mean(my_array) - Media do array
+np.median(my_array) - Mediana do array
+my_array.corrcoef() - Coeficiente de correlação
+np.std(my_array) - Desvio Padrão
+
+
+
+
+
+
+
+

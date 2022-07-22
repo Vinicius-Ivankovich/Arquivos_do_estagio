@@ -1,0 +1,62 @@
+Dia 3
+Inicio do curso do linkedin de Apache PySpark by Example
+Spark vs pandas:
+O pandas só consegue processar dados que estao em uma unica maquina
+ja o pyspark possibilita trabalhar com dados armazenados em várias maquinas
+Hadoop vs spark
+O spark consegue proessar dados até 100x mais rápido que o hadoop
+O spark é mais caro de manter pois exige RAM enquanto o hadoop
+exige espaço em disco
+Dask vs spark
+O spark suporta varias linguagens, ja o dask só suporta python
+O dask é mais complexo e dificil de usar
+O dask depende de outras bibliotecas python para machine learning
+O spark tem uma biblioteca para proessamento grafico, ja o dask não
+
+Dataframes e RDDs
+RDDs são de baixo nivel enquanto dataframes são de alto
+
+Para usar o Spark
+import pyspark
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.getOrCreate()
+
+Ler csv em spark
+df = spark.read.csv(arquivo, header=)
+
+Ver x linhas do dataframe em Spark
+df.take(x)
+
+Ver todo o dataframe em Spark
+df.collect()
+
+Mostrar mais formatado x colunas
+df.show(n)
+
+Retorna um dataframe com a primeira e ultima linha
+df.limit(n)
+
+Retorna um array com a primeira e ultima linha
+df.head
+
+Acessar uma coluna
+df.coluna ( não pode ser usado caso a coluna tenha um nome de palavras reservadas)
+df['coluna']
+df.select(col('coluna'))
+
+Ver o nome das colunas
+df.column
+
+Renomear coluna
+df.withColumnRenamed(nome_antigo,Nome_novo)
+
+Remover colunas
+df.drop('Nome_coluna')
+df.drop('Nome_coluna','Nome_coluna2')
+
+Agrupar por culuna
+df.groupBy('column')
+
+
+
+
