@@ -57,6 +57,18 @@ df.drop('Nome_coluna','Nome_coluna2')
 Agrupar por culuna
 df.groupBy('column')
 
+Filtrar coluna
+df.filter(col('column') > 1 ) #neste exemplo a coluna deve ser maior que 1
+
+Mostrar o nome das colunas distintas
+df.select(col('coluna')).distinct().show()
+
+Ordenar colunas
+df.orderBy(col('coluna'))
+
+Adicionar linhas 
+df.union(df2)
+
 
 
 
