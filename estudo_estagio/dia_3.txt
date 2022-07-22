@@ -69,6 +69,11 @@ df.orderBy(col('coluna'))
 Adicionar linhas 
 df.union(df2)
 
+Importar funções especificas
+from pyspark.sql.functions import mean
+df.select(mean(df.column1)).show()
+
+
 
 
 
