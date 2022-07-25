@@ -1,0 +1,17 @@
+Continuidade ao curso de spark
+Trabalhar com datas:
+Site para trabalhar com todate e totimestamp:
+https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+Trabalhando com joins:
+Para executar um join as chaves precisam estar no mesmo formato
+no codigo exemplo de joins o distrito em um dataframe estava como
+001, por exemplo, e no outro como 1, para usar o join os dois precisam
+estar iguais.
+Usar RDDs somente quando extremamente necessário pois em python a
+performance não é muito boa, somente usar quando necessario controle fisico
+do particionamento de dados:
+funções que retornam RDDs:
+map
+flatMap
+filter
+
