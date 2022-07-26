@@ -15,3 +15,4 @@ map
 flatMap
 filter
 
+Instalação do aws glue para o vscode concluida

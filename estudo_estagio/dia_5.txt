@@ -1,0 +1,35 @@
+AWS Glue:
+É um servico de ETL(extract, transform, and load) que facilita limpeza de dados, enriquecimento
+e transporte de dados.O glue consiste em um unico repositorio chamado de 
+aws glue datalog, um motor de etl que gera codigos em python e scala
+O glue é feito para trabalhar com dados semi-estruturados e detecta 
+mudanças no schema, no glue é possivel agendar tarefas como execuções, 
+ele tenta cuidar dos erros e tenta de novo automaticamente
+O glue pode trabalhar com varios dataframes , entre eles o amazon S3
+, o mongoDB, apache KAFTA.
+É usado um crawler para popular uma fonte de dados.
+O glue trabalha com scripts para tranformar os dados.
+No data catalog ficam as definições de tabela e outras definições relacionadas
+a informaçoes de controle.
+O classifier determina os schemas dos dados, é possivel escrever o proprio 
+classifier.
+Crawler é um programa que se conecta a base de dados e progride com uma lista 
+de classifiers a determinar os schemas de todos os dados e depois cria tabelas de metadados
+no catalogo de dados.
+Um worker é uma unidade de processamento de dados tendo tres tipos deles para a empresa escolher 
+qual menlhor se adequa as necessidades.
+O console do glue é usado para orquestrar o fluxo de etl definindo
+objetos,agendando crawlers, filtrando listas e editando scripts.
+O crawler le o armazenamento de dados e cria definições e tabelas no glue, 
+é possivel tambem fazer este processo manualmente
+A segurança é responssbilidade da AWS.
+
+Login efetuado sem problemas no databricks e no glue studio
+
+Inicio de um curso geral de aws:
+Posuui serviços de computação, armazenamento e banco de dados, os serviços
+são completamente escalaveis com o modelo paya as you go, tendo assim 
+maior versatilidade tanto quanto a custos quanto a capacidade, alem de 
+ter maior performance.
+ 
+
