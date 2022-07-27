@@ -33,6 +33,27 @@ Guia a distribuição de recursos da aws de acordo com a necessidade
 Guard duty
 Programa de detecção de ameaças na AWS 
 
+inicio de curso de serviços da aws
+EC2
+ Servidor virtual com numero variavel de CPUs, RAM
+tamanho de armazenamento e velocidade de internet
+tem modelo de pagamento pay as you go e é rapido de implementar
+
+Elastic Beanstalk
+É um serviço que facilita a implementação de aplicações, é necessário 
+só submeter o codigo e ele cuida da implementação do codigo
+
+Elastic Load Balance
+Distribui o trafego de uma aplicação entre varios servidores, assim
+cuidando para nenhum servidor superlotar
+
+Lambda
+Automaticamente roda codigos upados e ajusta a escala de recursos
+
+Lightsail
+Plataforma para implementação de aplicações pequenas
+
+
 
 
 
