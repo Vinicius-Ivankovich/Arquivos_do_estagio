@@ -1,0 +1,40 @@
+Inicio do curso de segurança da aws
+A aws tem um alto nivel de segurança e como é em nuvem isso ajuda empresas
+a terem que investir menos em segurança
+A aws é responsavel por proteger a infraestrutura da nuvem, ja os consumidores
+são responsaveis pela segurança do que tem dentro das funções da nuvem
+Para garantir maior segurança é recomendavel que os acessos de usuaruis 
+sejam administrados frequentemente e que os privilegios de acesso
+sejam dados de acordo com a necessidade, além disso é importante monitorar
+as atividades feitas pelos usuarios.O gerenciamento pode ser feito pelo
+IAM (Identity Access Management)
+A AWS tem varios programas de compliance para as empresas determinarem se 
+podem armazenar dados na AWS ou não.
+O IAM é um serviço gratuito que facilita a distribuição de permissões
+podendo dividir grupos e funções e dar permissões temporarias
+
+AWS Web Application Firewall ( WAF )
+Protege apps em execução na nuvem da aws contra exploits comuns.
+É um firewall para aplicações web e é facil de implementar
+  
+AWS Shield
+Protege contra ataques DDoS
+o tier standard é gratis , é ativado automaticamente e protege
+de tipos comuns de ataques DDoS
+o tier advanced oferece apoio 24 horas do time contra ataques DDoS da AWS
+alem disso o advanced integra com o WAF
+
+Amazon Inspector
+Inspeciona a aplicações expondo possiveis vulnerabilidades
+
+AWS Trusted advisor
+Guia a distribuição de recursos da aws de acordo com a necessidade
+
+Guard duty
+Programa de detecção de ameaças na AWS 
+
+
+
+
+
+ 
