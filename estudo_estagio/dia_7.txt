@@ -1,0 +1,44 @@
+Estudos de pyspark by example
+Funções mais comuns de pyspark:
+
+version()  -  retorna a versão do spark que está rodando
+
+createDataFrame() - cria um dataframe e um RDD
+
+getActiveSession()  - retorna a sessão ativa do spark
+
+read()  - retorna um dataframe a partir de arquivos csv, parquet etc
+
+readStream()  - retorna um dataframe a partir de dados em streaming
+
+sparkContext()  - Retorna um SparkContext
+
+sql()  - retorna um dataframe depois de executar o comando sql mencionado
+
+sqlContext()  - retorna um sqlContext
+
+stop()  - Para o SparkContext atual
+
+table()  - retorna um dataframe de uma tabela
+
+
+
+Collect vs select
+o selec6t retorna um novo dataframe com as condições desejadas, ja o colect retorna todos os dados de um dataframe em um array
+
+.withcolumn()  - é possivel retipar, mudar e adicionar colunas a um dataframe
+
+withColumnRenamed()  - renomeia colunas do dataframe
+
+filter()  - retorna um dataframe que satisfaz a condição
+No filter o sinal de diferennte pode ser tanto != quanto <>
+também é possivel colocar multiplas condições com
+ands ( & ) e ous ( | ) 
+
+UDFs (funções definidas pelos usuários)
+Tem uma performance pior do que se usar somente funções nativas do pyspark
+pode ser criada com def nomefunc:
+
+
+
+

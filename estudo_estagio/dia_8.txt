@@ -1,0 +1,25 @@
+Continuidade nos estudos de pyspark
+Pyspark é uma API de spark para python
+
+.na.fill(valor_substituto,coluna(opcional))
+Substitui valores nulos pelo valor escrito
+
+foreach()  - aplica uma condicional em todas as linhas do dataframe
+
+map()  - também aplica uma condição a todas as linhas, porem ele retorna um dataframe com o resultado
+
+
+pivot()  - Pega os valores distintos das linhas e agrupa nas colunas
+
+parallelize()  - Divide o dataframe em partições menores
+
+repartition()  - usado para mudar o número de partições
+
+coalesce()  - usado somente para diminuir o numero de partições
+e é melhor que o repartition para essa função
+
+drop_duplicates()  - retorna um dataframe com as duplicatas removidas
+detalhe:se não tiver parametro ele olha todas as colunas, mas
+ele pode olhar colunas especificas assim:
+drop_duplicates(['coluna1','coluna2'])
+
