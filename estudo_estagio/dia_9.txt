@@ -1,0 +1,43 @@
+aws databricks
+
+Para ler um arquivo na aws databricks usando o DLT usa-se a sintaxe:
+@dlt.table
+def customers():
+  return (
+    spark.readStream.format("cloudFiles")
+      .option("cloudFiles.format", "csv")
+      .load("/databricks-datasets/retail-org/customers/")
+  )
+
+
+preencher nulos em pyspark:
+#preenche com 0 os nulos em todas as colunas inteiras
+df.na.fill(value=0).show()
+
+#Preenche com 0 os nulos da coluna population
+df.na.fill(value=0,subset=["population"]).show()
+
+
+Preencher com mais de uma condição por vez:
+df.na.fill("unknown",["city"]) \
+    .na.fill("",["type"]).show()
+
+OU
+
+df.na.fill({"city": "unknown", "type": ""}) \
+    .show()
+
+
+Escreve um arquivo parquet
+df.write.parquet("/tmp/output/people.parquet")
+
+Cria uma nova coluna com a data formatada para o formato desejado
+date_format(col("input"), "MM-dd-yyyy").alias("date_format") )
+
+
+Curso mongodb:
+O mongodb é um banco NoSQL que tem melhor performance e é 
+facilmente escalonavel
+Os dados do mongo são guardados em documentos
+Collections é onde documentos estão armazenado, e as
+collections são guardadas em um banco de dados
