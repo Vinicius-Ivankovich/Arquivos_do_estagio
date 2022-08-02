@@ -1,0 +1,66 @@
+MONGODB collections:
+A colection que parece mais importante é a person
+
+authentication: Informações basicas dos devedores ?
+
+Blacklist: Dados das pessoas que estão na blacklist
+
+Blocklist: Dados das pessoas ue estão na blocklist
+
+campaing: dados das tentativas de cobrança ?
+
+chanel: Lista com os tipos de canais de comunicação ?
+
+Click: lista com os acessos efetuados
+
+contact: Lista com as tentativas de contato com os devedores
+
+creditor: Lista com os dados das empresas credoras
+
+creditor_commission: Lista com os valores de comissão dos credores
+
+debtsSnapshot: ?
+
+externalServicesCache: ?
+
+funnelSnapshot: ?
+
+importerSummary: Estrutura que representa os processamentos de ETL
+
+inteteraction: Lista das interações feitas com os devedores
+
+lead_partner: Informações da empresa credora ?
+
+notification: Informações das notificações feitas aos devedores
+
+partner: ?
+
+partnerlog: ?
+
+payment: Estrutura que representa os pagamentos recebidos dos ETLs de credores
+
+payment_event: Estrutura que representa os eventos pagamentos recebidos dos ETLs e Dealers de credores
+
+person: todos os dados pessoais dos devedores
+
+proposal: Estrutura que representa as mensagens de propostas
+
+simulation: Simulações de acordo realizadas pelo devedor
+
+strategy: Estrutura que representa a estratégia de geração de campanha
+
+token: informações de status de contato com o devedor ?
+
+user: informações de login do usuário
+
+
+Databricks aws:
+
+link sobre schemas:
+https://sparkbyexamples.com/pyspark/pyspark-structtype-and-structfield/
+
+pegar schema de um json:
+new_schema = StructType.fromJson('json')
+
+ usar o schema:
+df = spark.createDataFrame(data=data,schema=schema)
